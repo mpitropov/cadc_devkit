@@ -55,6 +55,7 @@ def main():
         # Extract files
         zip = zipfile.ZipFile(calib_filename)
         zip.extractall()
+        zip.close()
         # Delete zip file
         os.remove(calib_filename)
 
@@ -78,6 +79,7 @@ def main():
             # Extract files
             zip = zipfile.ZipFile(data_filename)
             zip.extractall()
+            zip.close()
 
             # Delete zip file
             os.remove(data_filename)
