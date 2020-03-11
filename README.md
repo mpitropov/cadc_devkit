@@ -22,6 +22,19 @@ This script loads a camera image and the corresponding lidar file in a drive, lo
 ![Vehicle path demo](images/2019_02_27_0027_lidar_frame_90.png)
 
 ## run_demo_lidar_bev.py
-This script loads lidar data and the corresponding 3D annotation file in a drive, then creates a birds eye view of the lidar point cloud with the cuboid boxes overlaid.
+This script loads lidar data and the corresponding 3D annotation file in a drive, then creates a birds eye view of the lidar point cloud with the cuboid boxes overlaid. Script created by [asvath](https://github.com/asvath) and also located [here](https://github.com/asvath/cadcd/blob/master/birds_eye_view.py).
 
 ![Vehicle path demo](images/2019_02_27_0033_lidar_bev_frame_12_cropped.png)
+
+## Additional scripts
+Please view [asvath's](https://github.com/asvath) [cadcd](https://github.com/asvath/cadcd) repository.
+
+## Citation
+    @misc{pitropov2020canadian,
+        title={Canadian Adverse Driving Conditions Dataset},
+        author={Matthew Pitropov and Danson Garcia and Jason Rebello and Michael Smart and Carlos Wang and Krzysztof Czarnecki and Steven Waslander},
+        year={2020},
+        eprint={2001.10117},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
+    }
