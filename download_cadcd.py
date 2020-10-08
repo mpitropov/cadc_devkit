@@ -33,7 +33,7 @@ else:
     print('Please enter the path to store the dataset.')
     exit()
 
-labeled = False
+labeled = True
 if labeled:
     print('Downloading labeled data')
 else:
