@@ -26,6 +26,9 @@ This script loads lidar data and the corresponding 3D annotation file in a drive
 
 ![Vehicle path demo](images/2019_02_27_0033_lidar_bev_frame_12_cropped.png)
 
+## OpenPCDet data loader
+OpenPCDEt is an open source project with multiple architectures implemented for lidar based 3D object detection and support of several different datasets. A CADC dataset loader has been implemented on the [cadc support branch](https://github.com/mpitropov/OpenPCDet/tree/cadc_support) with the getting started document updated [Getting started with CADC](https://github.com/mpitropov/OpenPCDet/blob/cadc_support/docs/GETTING_STARTED.md#cadc-dataset). Any issues with the data loader should be opened within this repository. As of right now there is only one difficulty level.
+
 ## Additional scripts
 Please view [asvath's](https://github.com/asvath) [cadcd](https://github.com/asvath/cadcd) repository.
 
