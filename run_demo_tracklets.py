@@ -48,7 +48,7 @@ img_h, img_w = img.shape[:2]
 # Add each cuboid to image
 for cuboid in annotations_data[frame]['cuboids']:
   T_Lidar_Cuboid = np.eye(4);
-  T_Lidar_Cuboid[0:3,0:3] = R.from_euler('z', cuboid['yaw'], degrees=False).as_dcm();
+  T_Lidar_Cuboid[0:3,0:3] = R.from_euler('z', cuboid['yaw'], degrees=False).as_matrix();
   T_Lidar_Cuboid[0][3] = cuboid['position']['x'];
   T_Lidar_Cuboid[1][3] = cuboid['position']['y'];
   T_Lidar_Cuboid[2][3] = cuboid['position']['z'];

@@ -121,7 +121,7 @@ def bev(s1,s2,f1,f2,frame,lidar_path,annotations_path):
     for cuboid in annotations_data[frame]['cuboids']:
         T_Lidar_Cuboid = np.eye(4);  # identify matrix
         T_Lidar_Cuboid[0:3, 0:3] = R.from_euler('z', cuboid['yaw'],
-                                                degrees=False).as_dcm();  # rotate the identity matrix
+                                                degrees=False).as_matrix();  # rotate the identity matrix
         T_Lidar_Cuboid[0][3] = cuboid['position']['x'];  # center of the tracklet, from cuboid to lidar
         T_Lidar_Cuboid[1][3] = cuboid['position']['y'];
         T_Lidar_Cuboid[2][3] = cuboid['position']['z'];
