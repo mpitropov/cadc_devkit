@@ -33,11 +33,13 @@ This script loads lidar data and the corresponding 3D annotation file in a drive
 Please view [asvath's](https://github.com/asvath) [cadcd](https://github.com/asvath/cadcd) repository.
 
 ## Citation
-    @misc{pitropov2020canadian,
-        title={Canadian Adverse Driving Conditions Dataset},
-        author={Matthew Pitropov and Danson Garcia and Jason Rebello and Michael Smart and Carlos Wang and Krzysztof Czarnecki and Steven Waslander},
-        year={2020},
-        eprint={2001.10117},
-        archivePrefix={arXiv},
-        primaryClass={cs.CV}
+    @article{pitropov2021canadian,
+        title={Canadian adverse driving conditions dataset},
+        author={Pitropov, Matthew and Garcia, Danson Evan and Rebello, Jason and Smart, Michael and Wang, Carlos and Czarnecki, Krzysztof and Waslander, Steven},
+        journal={The International Journal of Robotics Research},
+        volume={40},
+        number={4-5},
+        pages={681--690},
+        year={2021},
+        publisher={SAGE Publications Sage UK: London, England}
     }
