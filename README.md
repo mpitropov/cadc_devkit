@@ -6,6 +6,19 @@ This will download all raw or labeled data into the given folder.
 
 This dataset is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
 
+## Transform naming convention
+The scripts in this repository as well as the calibration files for the dataset follow this naming convention for transforms:
+
+```
+T_FRAME1_FRAME2
+```
+This could be described as a transform from FRAME2 to FRAME1.
+For example, if you wanted to project lidar points onto an image and had the transforms `T_IMG_CAM` and `T_CAM_LIDAR` then this would be written:
+
+```
+T_IMG_LIDAR = T_IMG_CAM * T_CAM_LIDAR
+```
+
 ## run_demo_vehicle_path.py
 This script loads all GPS  messages in a drive, converts them to an ENU frame with the origin at the first message and plots each message as an axis frame.
 
